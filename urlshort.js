@@ -15,6 +15,10 @@ option2.addEventListener("click", () => {
   choosen = 2;
 });
 
+option3.addEventListener("click", () => {
+  choosen = 3;
+});
+
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   urlDiv.href = "";
@@ -33,6 +37,9 @@ form.addEventListener("submit", async (e) => {
         break;
       case 2:
         resultUrl = res.data.result.full_short_link2;
+        break;
+      case 3:
+        resultUrl = res.data.result.full_short_link3;
         break;
       default:
         resultUrl = res.data.result.full_short_link;
